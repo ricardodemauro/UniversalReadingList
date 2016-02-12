@@ -26,5 +26,9 @@ namespace CARD10.UniversalReadingList.Web.Models
 
         public DbSet<ReadItem> ReadItems { get; set; }
 
+        public static ApplicationDbContext Create()
+        {
+            return new ApplicationDbContext();
+        }
     }
 }
