@@ -12,31 +12,33 @@ namespace CARD10.UniversalReadingList.Web
 {
     public class Startup
     {
+        public string PublicClientId { get; private set; }
+
+        public OAuthAuthorizationServerOptions OAuthOptions { get; private set; }
+
         public void Configuration(IAppBuilder app)
         {
             // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=316888
             ConfigureAuth(app);
         }
 
-        public static void ConfigureAuth(IAppBuilder app)
+        public void ConfigureAuth(IAppBuilder app)
         {
             app.CreatePerOwinContext(ApplicationDbContext.Create);
 
-            // Configure the application for OAuth based flow
-            OAuthAuthorizationServerOptions OAuthServerOptions = new OAuthAuthorizationServerOptions()
+            PublicClientId = "self";
+            OAuthOptions = new OAuthAuthorizationServerOptions
             {
-                //For Dev enviroment only (on production should be AllowInsecureHttp = false)
-#if DEBUG
-                AllowInsecureHttp = true,
-#endif
-                TokenEndpointPath = new PathString("/oauth2/token"),
-                //set the token expiration time
-                AccessTokenExpireTimeSpan = TimeSpan.FromMinutes(400),
-                Provider = new AppOAuthProvider(),
+                TokenEndpointPath = new PathString("/Token"),
+                Provider = new ApplicationOAuthProvider(PublicClientId),
+                AuthorizeEndpointPath = new PathString("/api/Account/ExternalLogin"),
+                AccessTokenExpireTimeSpan = TimeSpan.FromDays(14),
+                // Note: Remove the following line before you deploy to production:
+                AllowInsecureHttp = true
             };
 
             // Enable the application to use bearer tokens to authenticate users
-            app.UseOAuthBearerTokens(OAuthServerOptions);
+            app.UseOAuthBearerTokens(OAuthOptions);
         }
     }
 }
