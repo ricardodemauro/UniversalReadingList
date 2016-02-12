@@ -16,7 +16,7 @@ namespace CARD10.UniversalReadingList.Web
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
+                routeTemplate: "data/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
         }

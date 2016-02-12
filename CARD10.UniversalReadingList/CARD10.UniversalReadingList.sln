@@ -24,6 +24,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CARD10.UniversalReadingList
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CARD10.UniversalReadingList.App.WindowsPhone", "CARD10.UniversalReadingList.App.WindowsPhone\CARD10.UniversalReadingList.App.WindowsPhone.csproj", "{2686B8EA-F7E5-482D-AD0B-D76B8D85E69E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BF44F8D3-2D57-40DF-8022-BD472094AE26}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pfx", "Pfx", "{DD382449-5653-49F3-8A86-54B58B450739}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\Pfx\ReadingList.pfx = Solution Items\Pfx\ReadingList.pfx
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		CARD10.UniversalReadingList.App.Shared\CARD10.UniversalReadingList.App.Shared.projitems*{7f3f3cda-c308-4c07-a544-22d91bb440ea}*SharedItemsImports = 4
@@ -114,5 +121,6 @@ Global
 		{AF2924E4-ABA2-49FE-A5E3-50EB97651B97} = {B79D6B74-388A-4007-B0F2-2C1D1ADD6255}
 		{7F3F3CDA-C308-4C07-A544-22D91BB440EA} = {B79D6B74-388A-4007-B0F2-2C1D1ADD6255}
 		{2686B8EA-F7E5-482D-AD0B-D76B8D85E69E} = {B79D6B74-388A-4007-B0F2-2C1D1ADD6255}
+		{DD382449-5653-49F3-8A86-54B58B450739} = {BF44F8D3-2D57-40DF-8022-BD472094AE26}
 	EndGlobalSection
 EndGlobal
