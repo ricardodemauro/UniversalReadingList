@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace CARD10.UniversalReadingList.App.Common
+namespace CARD10.UniversalReadingList.App.Infrastructure
 {
     /// <summary>
     /// A command whose sole purpose is to relay its functionality 

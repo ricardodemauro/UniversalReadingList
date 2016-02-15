@@ -31,6 +31,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pfx", "Pfx", "{DD382449-565
 		Solution Items\Pfx\ReadingList.pfx = Solution Items\Pfx\ReadingList.pfx
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CARD10.UniversalReadingList.Common", "CARD10.UniversalReadingList.Common\CARD10.UniversalReadingList.Common.csproj", "{AA006D67-EC94-46A0-B3AC-A62E688AAA82}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		CARD10.UniversalReadingList.App.Shared\CARD10.UniversalReadingList.App.Shared.projitems*{7f3f3cda-c308-4c07-a544-22d91bb440ea}*SharedItemsImports = 4
@@ -112,6 +114,16 @@ Global
 		{2686B8EA-F7E5-482D-AD0B-D76B8D85E69E}.Release|x86.ActiveCfg = Release|x86
 		{2686B8EA-F7E5-482D-AD0B-D76B8D85E69E}.Release|x86.Build.0 = Release|x86
 		{2686B8EA-F7E5-482D-AD0B-D76B8D85E69E}.Release|x86.Deploy.0 = Release|x86
+		{AA006D67-EC94-46A0-B3AC-A62E688AAA82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA006D67-EC94-46A0-B3AC-A62E688AAA82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA006D67-EC94-46A0-B3AC-A62E688AAA82}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{AA006D67-EC94-46A0-B3AC-A62E688AAA82}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AA006D67-EC94-46A0-B3AC-A62E688AAA82}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AA006D67-EC94-46A0-B3AC-A62E688AAA82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA006D67-EC94-46A0-B3AC-A62E688AAA82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA006D67-EC94-46A0-B3AC-A62E688AAA82}.Release|ARM.ActiveCfg = Release|Any CPU
+		{AA006D67-EC94-46A0-B3AC-A62E688AAA82}.Release|x64.ActiveCfg = Release|Any CPU
+		{AA006D67-EC94-46A0-B3AC-A62E688AAA82}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -122,5 +134,6 @@ Global
 		{7F3F3CDA-C308-4C07-A544-22D91BB440EA} = {B79D6B74-388A-4007-B0F2-2C1D1ADD6255}
 		{2686B8EA-F7E5-482D-AD0B-D76B8D85E69E} = {B79D6B74-388A-4007-B0F2-2C1D1ADD6255}
 		{DD382449-5653-49F3-8A86-54B58B450739} = {BF44F8D3-2D57-40DF-8022-BD472094AE26}
+		{AA006D67-EC94-46A0-B3AC-A62E688AAA82} = {B79D6B74-388A-4007-B0F2-2C1D1ADD6255}
 	EndGlobalSection
 EndGlobal

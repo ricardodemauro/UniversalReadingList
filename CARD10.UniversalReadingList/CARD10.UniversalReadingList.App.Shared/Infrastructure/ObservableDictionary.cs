@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Windows.Foundation.Collections;
 
-namespace CARD10.UniversalReadingList.App.Common
+namespace CARD10.UniversalReadingList.App.Infrastructure
 {
     /// <summary>
     /// Implementation of IObservableMap that supports reentrancy for use as a default view

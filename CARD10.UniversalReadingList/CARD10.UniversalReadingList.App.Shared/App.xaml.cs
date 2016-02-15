@@ -30,6 +30,8 @@ namespace CARD10.UniversalReadingList.App
         private TransitionCollection transitions;
 #endif
 
+        internal Datasource.Datasource Datasource { get; set; }
+
         /// <summary>
         /// Initializes the singleton instance of the <see cref="App"/> class. This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
@@ -54,6 +56,8 @@ namespace CARD10.UniversalReadingList.App
                 this.DebugSettings.EnableFrameRateCounter = true;
             }
 #endif
+
+            this.Datasource = new UniversalReadingList.App.Datasource.Datasource();
 
             Frame rootFrame = Window.Current.Content as Frame;
 
