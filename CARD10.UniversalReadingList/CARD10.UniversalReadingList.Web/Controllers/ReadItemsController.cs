@@ -9,7 +9,6 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Description;
-using CARD10.UniversalReadingList.Models;
 using CARD10.UniversalReadingList.Web.Models;
 
 namespace CARD10.UniversalReadingList.Web.Controllers

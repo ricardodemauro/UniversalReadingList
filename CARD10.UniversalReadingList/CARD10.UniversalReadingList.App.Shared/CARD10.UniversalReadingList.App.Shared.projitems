@@ -27,6 +27,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Infrastructure\ViewModelLocator.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Repository\CategoryRepository.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Repository\ReadItemRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repository\RepositoryBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\HomeViewModel.cs" />
     <Content Include="$(MSBuildThisFileDirectory)DataModel\SampleData.json" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\LightGray.png" />

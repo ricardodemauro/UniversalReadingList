@@ -16,6 +16,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 using CARD10.UniversalReadingList.App.Common;
+using CARD10.UniversalReadingList.App.Infrastructure;
 
 // The Universal Hub Application project template is documented at http://go.microsoft.com/fwlink/?LinkID=391955
 
@@ -30,7 +31,7 @@ namespace CARD10.UniversalReadingList.App
         private TransitionCollection transitions;
 #endif
 
-        internal Datasource.Datasource Datasource { get; set; }
+        internal Datasource Datasource { get; set; }
 
         /// <summary>
         /// Initializes the singleton instance of the <see cref="App"/> class. This is the first line of authored code
@@ -57,7 +58,7 @@ namespace CARD10.UniversalReadingList.App
             }
 #endif
 
-            this.Datasource = new UniversalReadingList.App.Datasource.Datasource();
+            this.Datasource = new Datasource();
 
             Frame rootFrame = Window.Current.Content as Frame;
 

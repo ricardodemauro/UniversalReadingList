@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using CARD10.UniversalReadingList.App.Data;
 using CARD10.UniversalReadingList.App.Common;
+using CARD10.UniversalReadingList.App.Infrastructure;
 
 // The Universal Hub Application project template is documented at http://go.microsoft.com/fwlink/?LinkID=391955
 

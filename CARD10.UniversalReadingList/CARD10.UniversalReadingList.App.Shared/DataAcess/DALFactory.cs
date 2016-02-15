@@ -6,11 +6,16 @@ using System.Text;
 
 namespace CARD10.UniversalReadingList.App.DataAcess
 {
-    public static class DALFactory
+    internal static class DALFactory
     {
-        public static ICategoryDAL GetCategory(Datasource datasource)
+        internal static ICategoryDAL GetCategory(Datasource datasource)
         {
-            return new CategoryRepository()
+            return new CategoryRepository(datasource);
+        }
+
+        internal static IReadItemDAL GetReadItem(Datasource datasource)
+        {
+            return new ReadItemRepository(datasource);
         }
     }
 }

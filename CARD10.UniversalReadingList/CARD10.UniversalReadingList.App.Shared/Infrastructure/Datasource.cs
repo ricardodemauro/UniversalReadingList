@@ -58,6 +58,7 @@ namespace CARD10.UniversalReadingList.App.Infrastructure
         }
 
         public async Task TrunckTable<TTable>()
+            where TTable : class
         {
             await db.Table<TTable>().PurgeAsync();
         }

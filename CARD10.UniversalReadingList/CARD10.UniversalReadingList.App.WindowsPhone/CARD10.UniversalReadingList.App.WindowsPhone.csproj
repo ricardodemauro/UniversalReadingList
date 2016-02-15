@@ -130,6 +130,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="ReadingList.pfx" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CARD10.UniversalReadingList.Common\CARD10.UniversalReadingList.Common.csproj">
@@ -139,6 +140,12 @@
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>ReadingList.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <Import Project="..\CARD10.UniversalReadingList.App.Shared\CARD10.UniversalReadingList.App.Shared.projitems" Label="Shared" />
   <PropertyGroup Condition=" '$(TargetPlatformIdentifier)' == '' ">
