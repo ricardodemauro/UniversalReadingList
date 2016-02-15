@@ -17,5 +17,10 @@ namespace CARD10.UniversalReadingList.App.DataAcess
         {
             return new ReadItemRepository(datasource);
         }
+
+        internal static UnityOfWork GetUnityOfWork(Datasource datasource)
+        {
+            return new UnityOfWork(datasource);
+        }
     }
 }

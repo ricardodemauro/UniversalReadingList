@@ -141,11 +141,19 @@ namespace CARD10.UniversalReadingList.App
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             this.navigationHelper.OnNavigatedTo(e);
+            if (this.DataContext != null && this.DataContext is ViewModelBase)
+            {
+                ((ViewModelBase)this.DataContext).OnNavigatedTo(this, e);
+            }
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
             this.navigationHelper.OnNavigatedFrom(e);
+            if (this.DataContext != null && this.DataContext is ViewModelBase)
+            {
+                ((ViewModelBase)this.DataContext).OnNavigatedFrom(this, e);
+            }
         }
 
         #endregion

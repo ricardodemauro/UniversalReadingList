@@ -274,4 +274,7 @@
   <data name="NavigationFailedExceptionMessage" xml:space="preserve">
     <value>Navigation failed.</value>
   </data>
+  <data name="HubSectionCategories" xml:space="preserve">
+    <value>Categories</value>
+  </data>
 </root>

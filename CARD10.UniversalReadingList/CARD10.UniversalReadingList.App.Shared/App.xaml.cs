@@ -31,7 +31,7 @@ namespace CARD10.UniversalReadingList.App
         private TransitionCollection transitions;
 #endif
 
-        internal Datasource Datasource { get; set; }
+        internal static Datasource Datasource { get; set; }
 
         /// <summary>
         /// Initializes the singleton instance of the <see cref="App"/> class. This is the first line of authored code
@@ -58,7 +58,7 @@ namespace CARD10.UniversalReadingList.App
             }
 #endif
 
-            this.Datasource = new Datasource();
+            Datasource = new Datasource();
 
             Frame rootFrame = Window.Current.Content as Frame;
 

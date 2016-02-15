@@ -7,11 +7,11 @@ namespace CARD10.UniversalReadingList.App.Infrastructure
 {
     public class ViewModelLocator
     {
-        public HomeViewModel Home
+        public HubViewModel Hub
         {
             get
             {
-                return new HomeViewModel();
+                return new HubViewModel();
             }
         }
     }
