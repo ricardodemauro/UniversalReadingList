@@ -19,6 +19,10 @@ namespace CARD10.UniversalReadingList.Web.Models
             : base("name=ApplicationDbContext")
         {
             this.Database.Log = l => System.Diagnostics.Debug.Write(l);
+            this.Configuration.LazyLoadingEnabled = false;
+            this.Configuration.ProxyCreationEnabled = false;
+
+            Database.SetInitializer<ApplicationDbContext>(new ApplicationDbInitializer());
         }
 
         public DbSet<Category> Categories { get; set; }

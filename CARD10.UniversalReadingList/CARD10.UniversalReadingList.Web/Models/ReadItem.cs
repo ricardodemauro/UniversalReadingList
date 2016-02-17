@@ -16,7 +16,7 @@ namespace CARD10.UniversalReadingList.Web.Models
 
         public string Uri { get; set; }
 
-        public int CategoryId { get; set; }
+        public int? CategoryId { get; set; }
 
         public Category Category { get; set; }
     }

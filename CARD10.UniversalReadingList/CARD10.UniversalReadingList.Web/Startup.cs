@@ -6,7 +6,7 @@ using CARD10.UniversalReadingList.Web.Models;
 using Microsoft.Owin.Security.OAuth;
 using CARD10.UniversalReadingList.Web.Provider;
 
-[assembly: OwinStartup(typeof(CARD10.UniversalReadingList.Web.Startup))]
+[assembly: OwinStartup("Config", typeof(CARD10.UniversalReadingList.Web.Startup))]
 
 namespace CARD10.UniversalReadingList.Web
 {
