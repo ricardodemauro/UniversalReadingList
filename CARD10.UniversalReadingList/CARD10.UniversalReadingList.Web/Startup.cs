@@ -25,6 +25,7 @@ namespace CARD10.UniversalReadingList.Web
         public void ConfigureAuth(IAppBuilder app)
         {
             app.CreatePerOwinContext(ApplicationDbContext.Create);
+            app.CreatePerOwinContext<ApplicationUserManager>(ApplicationUserManager.Create);
 
             PublicClientId = "self";
             OAuthOptions = new OAuthAuthorizationServerOptions
