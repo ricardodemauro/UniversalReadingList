@@ -238,6 +238,7 @@
     <Content Include="font\roboto\Roboto-Thin.woff2" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\angular.min.js.map" />
+    <Content Include="Views\Home\Login.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

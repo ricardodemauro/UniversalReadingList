@@ -26,5 +26,11 @@ namespace CARD10.UniversalReadingList.Web.Controllers
 
             return View();
         }
+
+        public ActionResult LogIn()
+        {
+            ViewBag.Message = "LogIn";
+            return View();
+        }
     }
 }
