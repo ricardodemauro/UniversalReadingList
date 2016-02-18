@@ -39,7 +39,7 @@ namespace CARD10.UniversalReadingList.Web.Provider
 
             ClaimsIdentity oAuthIdentity = await user.GenerateUserIdentityAsync(userManager,
                OAuthDefaults.AuthenticationType);
-            
+
             AuthenticationProperties properties = CreateProperties(context.UserName);
             AuthenticationTicket ticket = new AuthenticationTicket(oAuthIdentity, properties);
             context.Validated(ticket);
